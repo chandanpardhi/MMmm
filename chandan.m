@@ -5,8 +5,8 @@ close all;
 lambda1=5;
 lambda2=7;
 m=50;
-inter_arr_c1 = exprnd(1/lambda1,1,70000);
-inter_arr_c2 = exprnd(1/lambda2,1,70000);
+inter_arr_c1 = exprnd(1/lambda1,1,50000);
+inter_arr_c2 = exprnd(1/lambda2,1,50000);
 server(1:m)=0;
 time_instants=[0];
 class=[0];
@@ -48,6 +48,7 @@ while(t<endtime)
     for i = 1:m 
         if server(i)<0
             server(i)=0;
+            class(i)=0;
         end
     end
       
