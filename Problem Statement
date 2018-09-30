@@ -1,0 +1,20 @@
+Problem 1: 
+
+Consider a two-class M/M/m/m system with preferential treatment for one class. There is a limit of
+k < m on the number of circuits (servers) that can be used by sessions (customers) of second type, so there are always
+m − k circuits for use by sessions of the first type. Take m = 50, k = 20, λ1 = 5 calls/min, λ2 = 7 calls/min,
+1/µ1 = 4 min, and 1/µ2 = 3 min.
+
+
+a) Write a computer program to obtain the call blocking probabilities of the two sessions, using the Erlang's formula.
+
+b) Simulate the Poisson distributed arrival processes and exponentially distributed service times. (Recall that call
+arrivals with exponentially distributed interarrival times follow Poisson distribution.) Obtain the blocking probabilities using the simulated call generation and service processes. Verify the results with those obtained in part(a).
+
+c) Eliminate the condition of preferential treatment of one session, i.e., consider now k = m. However the arrival
+and service rates remain as before. Obtain the blocking probability of the overall system using the discrete event
+simulation approach developed in part (b). Compare the result with those obtained in part (b). 
+
+d) Vary m from 20 to 60 in 8 steps and obtain the graphical plot of system call blocking probability versus number
+of circuits (m) for the system in part (c). Also mark the blocking probabilities at different m obtained using the
+analytic expressions in part (a) in the same graph to verify how they match with your simulated results.
